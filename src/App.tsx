@@ -1,14 +1,12 @@
-import './App.css'
-import { Greet } from './components/Greet'
+import './App.css';
+import { Greet } from './components/Greet';
 
 function App() {
-
   return (
     <>
-      <Greet name="Dhanaraj" />
-      <Greet name="Sharva Sekar" />    
+      <Greet name="Sharva Sekar" messageCount={10} isLoggedIn={false} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
