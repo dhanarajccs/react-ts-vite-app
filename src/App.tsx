@@ -1,6 +1,7 @@
 import "./App.css";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { OptionalType } from "./components/OptionalType";
 import { Oscar } from "./components/Oscar";
 import Person from "./components/Person";
 import { PersonList } from "./components/PersonList";
@@ -45,6 +46,8 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to AR Rahman!</Heading>
       </Oscar>
+
+      <OptionalType name="Dhanaraj"  isLoggedIn={true} />
     </>
   );
 }
