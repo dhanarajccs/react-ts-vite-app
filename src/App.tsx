@@ -1,6 +1,7 @@
 import "./App.css";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
+import { Oscar } from "./components/Oscar";
 import Person from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
@@ -38,6 +39,12 @@ function App() {
       {/* <Heading>Placeholder text</Heading> */}
 
       <Heading>Placeholder text</Heading>
+
+
+      {/* When the child prop is also another React component, typeof React component is React.ReactNode preferred. */}
+      <Oscar>
+        <Heading>Oscar goes to AR Rahman!</Heading>
+      </Oscar>
     </>
   );
 }
