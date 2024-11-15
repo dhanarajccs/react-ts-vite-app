@@ -46,5 +46,17 @@ export default tseslint.config({
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
   },
-})
+});
 ```
+
+## Notes:
+
+1. AutoComplete the properties / Autocomplete intellisense
+2. Display runtime errors directly for immediate debugging instead of checking the browser console.
+3. type - used for app
+4. interface - used for library
+
+5. Though status = 'randomstring',
+   Our message can handle only "loading", "success", and "error".
+   But Typescript does not flag it as an error.
+   To fix this issue, we can use "union of string literals" as status type

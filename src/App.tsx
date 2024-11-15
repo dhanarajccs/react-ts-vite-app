@@ -31,7 +31,7 @@ function App() {
       <Greet name="Sharva Sekar" messageCount={10} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} />
-      <Status status="success" />
+      <Status status="successxyz" />
     </>
   );
 }
