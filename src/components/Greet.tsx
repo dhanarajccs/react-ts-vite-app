@@ -4,7 +4,7 @@ type GreetProps = {
   isLoggedIn: boolean;
 };
 
-export const Greet = (props: GreetProps) => {
+export const Greet = (props: GreetProps) => { 
   return (
     <div>
       <h2>
