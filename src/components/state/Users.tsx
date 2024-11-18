@@ -2,28 +2,30 @@
 import { useState } from 'react' 
 
 type AuthUser = {
-  name: string 
-  email: string 
-} 
+  name: string
+  email: string
+}
 
 export const Users = () => {
-  const [user, setUser] = useState<AuthUser>({} as AuthUser) 
+  const [user, setUser] = useState<AuthUser>({} as AuthUser) // Type assertion
 
   const handleLogin = () => {
     setUser({
       name: 'Dhanaraj',
       email: 'dhanaraj@example.com',
-    }) 
-  } 
-  
+    })
+  }
+
   return (
     <div>
       <button onClick={handleLogin}>Login</button>
-      <div>User name is {user?.name} </div>
-      <div>User email is {user?.email} </div>
+      {/* Type assertion allows us to access name without optional chaining operator */}
+      <div>User name is {user.name} </div>
+      {/* Type assertion allows us to access email without optional chaining operator */}
+      <div>User email is {user.email} </div>
     </div>
-  ) 
-} 
+  )
+}
 
 
 /*
