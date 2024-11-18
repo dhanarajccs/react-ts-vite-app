@@ -6,6 +6,7 @@ import { OptionalType } from "./components/OptionalType";
 import { Oscar } from "./components/Oscar";
 import Person from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { LoggedIn } from "./components/state/LoggedIn";
 import { Status } from "./components/Status";
 
 function App() {
@@ -58,6 +59,9 @@ function App() {
       {/* <Container styles={{ border: '1px solid black', padding: '1rem', color: 'red', display: 0 }} /> */}
       
       <Container styles={{ border: '1px solid black', padding: '1rem', color: 'red', display: 'flex' }} />      
+
+      <LoggedIn />
+    
     </>
   );
 }
