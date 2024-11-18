@@ -1,4 +1,5 @@
 import "./App.css";
+import { Container } from "./components/Container";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { OptionalType } from "./components/OptionalType";
@@ -47,7 +48,16 @@ function App() {
         <Heading>Oscar goes to AR Rahman!</Heading>
       </Oscar>
 
-      <OptionalType name="Dhanaraj"  isLoggedIn={true} />
+      <OptionalType name="Dhanaraj" isLoggedIn={true} />
+
+
+      {/* Object literal may only specify known properties, but 'paddindsdg' does not exist in type  */}
+      {/* <Container styles={{ border: '1px solid black', paddindsdg: '1rem', color: 'red' }} /> */}
+      
+      {/* Type 'number' is not assignable to type 'Display | undefined' */}
+      {/* <Container styles={{ border: '1px solid black', padding: '1rem', color: 'red', display: 0 }} /> */}
+      
+      <Container styles={{ border: '1px solid black', padding: '1rem', color: 'red', display: 'flex' }} />      
     </>
   );
 }
