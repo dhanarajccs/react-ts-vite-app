@@ -6,6 +6,7 @@ import { OptionalType } from "./components/OptionalType";
 import { Oscar } from "./components/Oscar";
 import Person from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { Counter } from "./components/state/Counter";
 import { LoggedIn } from "./components/state/LoggedIn";
 import { User } from "./components/state/User";
 import { Users } from "./components/state/Users";
@@ -67,6 +68,7 @@ function App() {
       <User />    
 
       <Users />    
+      <Counter />
     </>
   );
 }
