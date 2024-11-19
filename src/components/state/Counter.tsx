@@ -102,3 +102,13 @@ export const Counter = () => {
 
 // Note: Type 'boolean' is not assignable to type 'string'
 // Note: Type 'string' is not assignable to type 'number'
+
+/*
+Important note:
+if you pass, state and dispatch as props to a component, 
+simply hover on either state or dispatch, copy the type which shows in the tooltip and use it as the prop type. 
+
+i.e.,
+const state: CounterState
+const dispatch: React.Dispatch<CounterAction>
+*/
