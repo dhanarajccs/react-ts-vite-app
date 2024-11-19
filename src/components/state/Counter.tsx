@@ -90,12 +90,14 @@ export const Counter = () => {
   return (
     <>
       Count: {state.count}
-      <button onClick={() => dispatch({ type: 'increment', payload: 10 })}>
+      <button onClick={() => dispatch({ type: false, payload: 10 })}>
         Increment 10
       </button>
-      <button onClick={() => dispatch({ type: 'decrement', payload: 10 })}>
+      <button onClick={() => dispatch({ type: true, payload: 10 })}>
         Decrement 10
       </button>
     </>
   ) 
 } 
+
+// Note: Type 'boolean' is not assignable to type 'string'
